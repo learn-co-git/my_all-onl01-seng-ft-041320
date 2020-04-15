@@ -6,4 +6,6 @@ def my_all?(collection)
   while i < collection.length 
   solution << yield(collection[i])
   i += 1
+end 
+solution
 end
