@@ -4,8 +4,10 @@ def my_all?(collection)
   solution = []
   i = 0 
   while i < collection.length 
-  solution << yield(collection[i])
+  if(yield(collection[i]) != yield(collection[(i + 1) % collection.length])
+    return false 
+  end 
   i += 1
 end 
-solution
+true
 end
