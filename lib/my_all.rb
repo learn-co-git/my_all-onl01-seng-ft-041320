@@ -5,7 +5,7 @@ def my_all?(collection)
   i = 0 
   while i < collection.length
   yield(collection[i])
-  value = yield(collection[(i + 1) % collection.length]
+  value = yield(collection[(i + 1) % collection.length])
   if(yield(collection[i]) != value)
     return false 
   end 
